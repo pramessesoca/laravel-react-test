@@ -1,6 +1,8 @@
 import React from 'react'
 import Slider from "react-slick";
 import { arr } from "../assets/imageExport"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 const Carousel = () => {
@@ -15,22 +17,22 @@ const Carousel = () => {
         cssEase: "ease-in"
     };
     return (
-        <div className='max-w-[90%] mx-auto'>
+        <div className='w-full max-w-screen-xl mx-auto overflow-hidden'>
             <Slider {...settings}>
                 <div>
-                    <img src={arr[0]} alt="slides" />
+                    <img className="w-full h-[260px] md:h-[520px] object-cover" src={arr[0]} alt="slides" />
                 </div>
                 <div>
-                    <img src={arr[1]} alt="slides" />
+                    <img className="w-full h-[260px] md:h-[520px] object-cover" src={arr[1]} alt="slides" />
                 </div>
                 <div>
-                    <img src={arr[2]} alt="slides" />
+                    <img className="w-full h-[260px] md:h-[520px] object-cover" src={arr[2]} alt="slides" />
                 </div>
                 <div>
-                    <img src={arr[3]} alt="slides" />
+                    <img className="w-full h-[260px] md:h-[520px] object-cover" src={arr[3]} alt="slides" />
                 </div>
                 <div>
-                    <img src={arr[4]} alt="slides" />
+                    <img className="w-full h-[260px] md:h-[520px] object-cover" src={arr[4]} alt="slides" />
                 </div>
             </Slider>
         </div>
